@@ -47,7 +47,7 @@ extends_documentation_fragment:
 
 EXAMPLES = r'''
 - name: upgrade vmware vcenter to latest version
-  community.vmware.vmware_vcenter_upgrade:
+  vmware_vcenter_upgrade:
       hostname: '{{ vcenter_hostname }}'
       username: '{{ vcenter_username }}'
       password: '{{ vcenter_password }}'
@@ -55,7 +55,7 @@ EXAMPLES = r'''
   delegate_to: localhost
 
 - name: upgrade vmware vcenter to specific version
-  community.vmware.vmware_vcenter_upgrade:
+  vmware_vcenter_upgrade:
       hostname: '{{ vcenter_hostname }}'
       username: '{{ vcenter_username }}'
       password: '{{ vcenter_password }}'
@@ -64,7 +64,7 @@ EXAMPLES = r'''
   delegate_to: localhost
 
 - name: stage vmware vcenter specific version upgrade
-  community.vmware.vmware_vcenter_upgrade:
+  vmware_vcenter_upgrade:
       hostname: '{{ vcenter_hostname }}'
       username: '{{ vcenter_username }}'
       password: '{{ vcenter_password }}'
@@ -73,7 +73,7 @@ EXAMPLES = r'''
   delegate_to: localhost
 
 - name: list vmware vcenter upgrade information
-  community.vmware.vmware_vcenter_upgrade:
+  vmware_vcenter_upgrade:
       hostname: '{{ vcenter_hostname }}'
       username: '{{ vcenter_username }}'
       password: '{{ vcenter_password }}'
