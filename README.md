@@ -41,7 +41,7 @@ ansible-doc vmware_vcenter_upgrade
       hostname: '{{ vcenter_hostname }}'
       username: '{{ vcenter_username }}'
       password: '{{ vcenter_password }}'
-      state:    'upgrade'
+      action:   'upgrade'
       version:  '7.0.3.00100'
   delegate_to: localhost
 
@@ -50,7 +50,7 @@ ansible-doc vmware_vcenter_upgrade
       hostname: '{{ vcenter_hostname }}'
       username: '{{ vcenter_username }}'
       password: '{{ vcenter_password }}'
-      state:    'stage'
+      action:   'stage'
       version:  '7.0.3.00100'
   delegate_to: localhost
 
@@ -59,6 +59,6 @@ ansible-doc vmware_vcenter_upgrade
       hostname: '{{ vcenter_hostname }}'
       username: '{{ vcenter_username }}'
       password: '{{ vcenter_password }}'
-      state:    'query'
+      action:   'query'
   delegate_to: localhost
 ```
