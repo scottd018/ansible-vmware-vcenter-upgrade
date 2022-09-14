@@ -5,7 +5,15 @@ Server appliance.
 
 **NOTE:** tested on VCSA 7.0u3
 
+# Pip requirements
 
+- requests
+- pyvmomi
+
+All pip requirements are in the requirements.txt file, you can install them with this command: 
+```
+pip install -r requirements.txt
+```
 # Installation
 
 - Move the python module wherever you'd like (e.g. /path/to/ansible/modules)
