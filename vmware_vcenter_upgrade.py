@@ -173,7 +173,8 @@ class VMwareVCenterUpgrade(PyVmomi):
     def get_upgrade_from_version(self):
         for upgrade_version in self.upgrade_data:
             if upgrade_version['version'] is self.version:
-                return self.version
+                
+        return self.version
 
     def get_upgrade_from_latest(self):
         latest = '0.0.0'
